@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ログイン - Cherlie</title>
+	<title>繝ｭ繧ｰ繧､繝ｳ - Cherlie</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
 </head>
 <body>
 	<form class="w-75 mx-auto">
-		<p class="mt-3">ユーザーID</p>
+		<p class="mt-3">繝ｦ繝ｼ繧ｶ繝ｼID</p>
 		<div>
 			<input class="formcontrol w-100 mt-1" name="UserID" placeholder="" required>
 		</div>
@@ -36,12 +36,12 @@
 			const idToken = liff.getDecodedIDToken();
 			const userId = idToken.sub;
 			$('form').append(`<input type="hidden" name="userId" value="${userId}">`);
-			$('form').append(`<input type="submit" class="mt-4 btn btn-primary" value="ログイン">`);
+			$('form').append(`<input type="submit" class="mt-4 btn btn-primary" value="繝ｭ繧ｰ繧､繝ｳ">`);
 		})
 		
 		$('form').submit(function( event ) {
 			event.preventDefault();
-			$.post( 'https://script.google.com/macros/s/AKfycbxzsg5MTDjxbXRmb2deVwX18-34Y2CeUZm_8yeWlVibdq6EVr854D9gQOfTG05da-NpIA/exec', $('form').serialize() );
+			$.post( 'https://script.google.com/macros/s/AKfycbxkiM7TOxg5YKmH8lycvi-YwIiDan5P-808l9QDWqpCg6GjplP_JSw3i7JTWfwcMBRaNA/exec', $('form').serialize() );
 		});
     </script>
 </body>
