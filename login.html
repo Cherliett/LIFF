@@ -12,7 +12,7 @@
 	<form class="w-75 mx-auto">
 		<p class="mt-3">ユーザーID</p>
 		<div>
-			<input class="formcontrol w-100 mt-1" name="UserID" placeholder="" required>
+			<input class="formcontrol w-100 mt-1" name="Userid" placeholder="" required>
 		</div>
 	</form>
 	
@@ -35,13 +35,13 @@
 			}
 			const idToken = liff.getDecodedIDToken();
 			const userId = idToken.sub;
-			$('form').append(`<input type="hidden" name="userId" value="${userId}">`);
+			$('form').append(`<input type="hidden" name="Lineid" value="${userId}">`);
 			$('form').append(`<input type="submit" class="mt-4 btn btn-primary" value="ログイン">`);
 		})
 		
 		$('form').submit(function( event ) {
 			event.preventDefault();
-			$.post( 'https://script.google.com/macros/s/AKfycbxkiM7TOxg5YKmH8lycvi-YwIiDan5P-808l9QDWqpCg6GjplP_JSw3i7JTWfwcMBRaNA/exec', $('form').serialize() );
+			$.post( 'https://script.google.com/macros/s/AKfycbyMd0X2J3C7c_IvymCDwDT20xbzmI3BjgX7PAdZzXqzcVUxScVacs5YoxpjwdIfAIGOvA/exec', $('form').serialize() );
 		});
     </script>
 </body>
