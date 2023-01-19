@@ -21,9 +21,13 @@
 <body>
     <div class="box01">
 	<form class="w-75 mx-auto">
-		<p class="mt-3">ユーザーID</p>
+		<div class="box02">
+		<p class="tag01">ユーザーID</p>
 		<div>
-			<input class="formcontrol w-100 mt-1" name="userid" placeholder="" required>
+			<input class="tag02" name="userid" placeholder="" required>
+		</div>
+		<div>
+			<p class="id_err">エラー：ユーザーIDが間違っています。</p>
 		</div>
 	</form>
     </div>
@@ -48,7 +52,7 @@
 			const idToken = liff.getDecodedIDToken();
 			const userId = idToken.sub;
 			$('form').append(`<input type="hidden" name="lineid" value="${userId}">`);
-			$('form').append(`<input type="submit" class="mt-4 btn btn-primary" value="ログイン">`);
+			$('form').append(`<input type="submit" class="tag03" value="ログイン">`);
 		})
 		
 		$('form').submit(function( event ) {
