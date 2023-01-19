@@ -6,3 +6,8 @@ h1 {
   font-family: 'Knewave', cursive;
   color: white;
 }
+
+body {
+  background-image: url("https://drive.google.com/uc?id=10zpWOnC2lZhc_ZFdUaIdn-3ejkVCEjip");
+  background-size: cover;
+}
