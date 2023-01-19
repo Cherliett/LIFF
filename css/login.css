@@ -25,6 +25,33 @@ body {
   left: 0;
   margin: auto;
 }
+.box02 {
+  padding: 30px 0px 0px 0px;
+}
+.tag01{
+  font-size: 25px;
+}
+.tag02{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+}
+.tag03 {
+  background: #000000;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 10px 25px;
+  color: #ffffff;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+.id_err {
+  color: red;
+}
+
 .face_icon {
   z-index: 2;
   padding: 20px 0px 0px 0px;
