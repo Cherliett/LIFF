@@ -11,3 +11,16 @@ body {
   background-image: url("https://drive.google.com/uc?id=10zpWOnC2lZhc_ZFdUaIdn-3ejkVCEjip");
   background-size: cover;
 }
+.box01 {
+  padding:15px;
+  width:calc(100% - 20px);
+  height:calc(100% - 70px);
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
