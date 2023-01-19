@@ -2,3 +2,7 @@ header {
   width: 100%;
   background-color: #3756af;
 }
+img.logo-img{
+  width: auto;
+  height: 10%;
+}
