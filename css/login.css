@@ -30,7 +30,8 @@ body {
 }
 .box03 {
   position: relative;
-  height: 50px;
+  height: 40px;
+  overflow: clip;
 }
 .box03 iframe {
   position: abusolute;
