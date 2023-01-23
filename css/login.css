@@ -51,6 +51,7 @@ body {
 }
 .id_err {
   color: red;
+  visibility: hidden;
 }
 
 .face_icon {
