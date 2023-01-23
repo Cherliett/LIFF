@@ -49,10 +49,6 @@ body {
   color: #ffffff;
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
-.id_err {
-  color: red;
-  visibility: hidden;
-}
 
 .face_icon {
   z-index: 2;
