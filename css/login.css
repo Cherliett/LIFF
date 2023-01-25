@@ -7,6 +7,10 @@ h1 {
   padding: 0px 0px 0px 8px;
   color: white;
 }
+body {
+  background-image: url("https://cherliett.github.io/LIFF/img/background_pat.jpg");
+  background-size: cover;
+}
 
 .face_icon {
   z-index: 2;
