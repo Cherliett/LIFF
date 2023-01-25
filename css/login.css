@@ -39,7 +39,7 @@ body {
 }
 .id_err {
   color: red;
-  visivility: hidden;
+  visibility: hidden;
 }
 .login_buttun {
   background: #000000;
