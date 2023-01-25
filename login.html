@@ -26,9 +26,10 @@
 		<div>
 			<input class="tag02" name="userid" placeholder="" required>
 		</div>
-		<div class="box03">
-			<iframe src="https://script.google.com/macros/s/AKfycbyfvCKJ6JRKcA8d4pPvbz2ZLT1eHxcJIAUNlTlhdKVYF02tMg-Yfcedp0A7owyZPIlfQg/exec" frameborder="0"></iframe>
+		<div>
+			<p visibility="hidden"> </p>
 		</div>
+		<input type="submit" class="tag03" value="ログイン">
 	</form>
     </div>
 	
@@ -52,7 +53,6 @@
 			const idToken = liff.getDecodedIDToken();
 			const userId = idToken.sub;
 			$('form').append(`<input type="hidden" name="lineid" value="${userId}">`);
-			$('form').append(`<input type="submit" class="tag03" value="ログイン">`);
 		})
 		
 		$('form').submit(function( event ) {
