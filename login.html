@@ -19,7 +19,7 @@
 	<h1>Charlie</h1>
 </header>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbwMx9afZmUv1C18QkYM7dNAT1jeS5h-wcx1vEq9OGmgfyPTWLJEcoI85YMfctPlaTiTHA/exec" frameborder="0"></iframe>
+    <iframe id="gas_page" src="https://script.google.com/macros/s/AKfycbwMx9afZmUv1C18QkYM7dNAT1jeS5h-wcx1vEq9OGmgfyPTWLJEcoI85YMfctPlaTiTHA/exec" frameborder="0"></iframe>
 	
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -39,7 +39,8 @@
 		}
 		const idToken = liff.getDecodedIDToken();
 		const userId = idToken.sub;
-		$('form').append(`<input type="hidden" name="lineid" value="${userId}">`);
+		let iframe = document.getElementById("gas_page");
+		iframe.contentWindow.lineID = profiele.userId;
 	})
     </script>
 </body>
