@@ -37,6 +37,10 @@ body {
   border-radius: 10px;
   font-size: 25px;
 }
+.id_err {
+  color: red;
+  visivility: hidden;
+}
 .login_buttun {
   background: #000000;
   position: relative;
