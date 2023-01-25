@@ -8,62 +8,6 @@ h1 {
   color: white;
 }
 
-body {
-  background-image: url("https://cherliett.github.io/LIFF/img/background_pat.jpg");
-  background-size: cover;
-}
-.box01 {
-  padding:15px;
-  width:calc(100% - 20px);
-  height:calc(100% - 70px);
-  border-radius: 10px;
-  background-color: #ffffff;
-  position: absolute;
-  top: 50px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}
-.box02 {
-  padding: 30px 0px 0px 0px;
-}
-.box03 {
-  position: relative;
-  height: 40px;
-  overflow: clip;
-}
-.box03 iframe {
-  position: abusolute;
-  top: -10px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
-.tag01{
-  font-size: 25px;
-}
-.tag02{
-  width: 100%;
-  height: 50px;
-  border-radius: 10px;
-  font-size: 25px;
-}
-.tag03 {
-  background: #000000;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 240px;
-  padding: 10px 25px;
-  color: #ffffff;
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-}
-
 .face_icon {
   z-index: 2;
   padding: 20px 0px 0px 0px;
