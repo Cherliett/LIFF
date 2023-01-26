@@ -30,7 +30,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
     <script>
-
+		var id_world;
+	    
 		liff.init({
 			liffId: '1657831283-AGG09xyz'
 		}).catch((err) => {
@@ -43,11 +44,12 @@
 			}
 			const idToken = liff.getDecodedIDToken();
 			const userId = idToken.sub;
-			$('form').append(`<input type="hidden" id="lineid" value="${userId}">`);
+			//$('form').append(`<input type="hidden" id="lineid" value="${userId}">`);
+			id_world = ${userId};
 		})
 	    
 	    	function clickBut() {
-			alert(lineid.value);
+			alert(id_world);
 		}
     </script>
 </body>
