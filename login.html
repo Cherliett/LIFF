@@ -43,7 +43,7 @@
 			const idToken = liff.getDecodedIDToken();
 			const userId = idToken.sub;
 			$('form').append(`<input type="hidden" id="lineid" value="${userId}">`);
-			document.getElementById("check_on").innerHTML = "LINE ID : ";
+			document.getElementById("check_on").innerText = "LINE ID : " + lineid.value;
 		})
     </script>
 </body>
