@@ -20,17 +20,7 @@
 </header>
 <body>
     <div class="main_box">
-	<form class="w-75 mx-auto">
-		<div class="letter_box">
-			<p class="id_letter"><b>ユーザーID</b></p>
-		<div>
-			<input class="id_textbox" name="userid" placeholder="" required>
-		</div>
-		<div>
-			<p style="visibility: hidden;">　</p>
-		</div>
-		<input type="submit" class="login_buttun" value="ログイン">
-	</form>
+	<iframe src="https://script.google.com/macros/s/AKfycbx_1J0TSU0s_0i0Cmer6vKeZVckQPqrB5ZcCHIaIxpv_HK3Xk7185oPixFsw1GYdA17gQ/exec" frameborder="0"></iframe>
     </div>
 	
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -54,11 +44,6 @@
 			const userId = idToken.sub;
 			$('form').append(`<input type="hidden" name="lineid" value="${userId}">`);
 		})
-		
-		$('form').submit(function( event ) {
-			event.preventDefault();
-			$.post( 'https://script.google.com/macros/s/AKfycbyfvCKJ6JRKcA8d4pPvbz2ZLT1eHxcJIAUNlTlhdKVYF02tMg-Yfcedp0A7owyZPIlfQg/exec', $('form').serialize() );
-		});
     </script>
 </body>
 </div>
