@@ -20,7 +20,7 @@
 </header>
 <body>
     <div class="body_box">
-	<iframe id="child_page" src="https://script.google.com/macros/s/AKfycbyy06guNuGhEoklDyqKasVz9Yoo7CAuQtWHyn8GDCzv6H5zHJD216bYR1HcC8Lr98BvYg/exec" frameborder="0"></iframe>
+	<iframe src="https://script.google.com/macros/s/AKfycbyy06guNuGhEoklDyqKasVz9Yoo7CAuQtWHyn8GDCzv6H5zHJD216bYR1HcC8Lr98BvYg/exec" frameborder="0"></iframe>
     </div>
 	
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -43,8 +43,6 @@
 			const idToken = liff.getDecodedIDToken();
 			const userId = idToken.sub;
 			$('form').append(`<input type="hidden" name="lineid" value="${userId}">`);
-			//let iframe = document.getElementById("child_page");
-			//iframe.contentWindow.parent_lineID = $('form').serialize();
 		})
     </script>
 </body>
