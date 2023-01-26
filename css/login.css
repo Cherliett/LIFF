@@ -9,21 +9,21 @@ h1 {
 }
 
 body {
-  //background-image: url("https://cherliett.github.io/LIFF/img/background_pat.jpg");
-  //background-size: cover;
+  /* background-image: url("https://cherliett.github.io/LIFF/img/background_pat.jpg");
+  background-size: cover; */
 }
 .body_box {
-  padding:15px;
-  width:calc(100% - 20px);
-  height:calc(100% - 70px);
-  border-radius: 10px;
-  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.body_box iframe {
   position: absolute;
-  top: 50px;
-  right: 0;
-  bottom: 0;
+  top: 0;
   left: 0;
-  margin: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .face_icon {
