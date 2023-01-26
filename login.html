@@ -43,8 +43,8 @@
 			const idToken = liff.getDecodedIDToken();
 			const userId = idToken.sub;
 			$('form').append(`<input type="hidden" name="lineid" value="${userId}">`);
-			let iframe = document.getElementById("child_page");
-			iframe.contentWindow.parent_lineID = $('form').serialize();
+			//let iframe = document.getElementById("child_page");
+			//iframe.contentWindow.parent_lineID = $('form').serialize();
 		})
     </script>
 </body>
