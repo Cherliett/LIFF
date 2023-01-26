@@ -21,7 +21,7 @@
 <body>
     <div class="main_box">
 	<iframe src="https://script.google.com/macros/s/AKfycbx3MLgZC36D-Ppf1jNT03hrsu_JM_Nom1QLZspIPvkttobZK3kotM8H22IIFB2lwnlrBw/exec" frameborder="0"></iframe>
-	    <div id="text-button" onclick="clickBut()">Click!</div>
+	    <p id="check_on">読み込み中...</p>
     </div>
 	
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -30,8 +30,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
     <script>
-		var id_world;
-	    
 		liff.init({
 			liffId: '1657831283-AGG09xyz'
 		}).catch((err) => {
@@ -44,13 +42,9 @@
 			}
 			const idToken = liff.getDecodedIDToken();
 			const userId = idToken.sub;
-			//$('form').append(`<input type="hidden" id="lineid" value="${userId}">`);
-			id_world = String(${userId});
+			$('form').append(`<input type="hidden" id="lineid" value="${userId}">`);
+			document.getElementById("check_on").innerHTML = "LINE ID : " + lineid.value;
 		})
-	    
-	    	function clickBut() {
-			alert("ID:/n");
-		}
     </script>
 </body>
 </div>
