@@ -19,18 +19,8 @@
 	<h1>Charlie</h1>
 </header>
 <body>
-    <div class="main_box">
-	<form class="w-75 mx-auto">
-		<div class="letter_box">
-			<p class="id_letter"><b>ユーザーID</b></p>
-		<div>
-			<input class="id_textbox" name="userid" placeholder="" required>
-		</div>
-		<div>
-			<p class="id_err" id="id_errm">ユーザーIDが間違っています。</p>
-		</div>
-		<input type="submit" class="login_buttun" value="ログイン">
-	</form>
+    <div class="body_box">
+	<iframe src="https://script.google.com/macros/s/AKfycbyfvCKJ6JRKcA8d4pPvbz2ZLT1eHxcJIAUNlTlhdKVYF02tMg-Yfcedp0A7owyZPIlfQg/exec" frameborder="0"></iframe>
     </div>
 	
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -55,13 +45,6 @@
 			const userId = idToken.sub;
 			$('form').append(`<input type="hidden" name="lineid" value="${userId}">`);
 		})
-		
-		$('form').submit(function( event ) {
-			event.preventDefault();
-			var result = "test";
-			result = $.post( 'https://script.google.com/macros/s/AKfycbzoxkZilL8WUxOtzlKv-oWYWv_t13pJhy9nMwgjVA0rkV3hW53NuteSkN46L-KVp2he-g/exec', $('form').serialize() );
-			setTimeout(function(){alert(JSON.stringify(result))},20000);
-		});
     </script>
 </body>
 </div>
