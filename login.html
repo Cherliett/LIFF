@@ -21,7 +21,7 @@
 <body>
     <div class="main_box">
 	<iframe src="https://script.google.com/macros/s/AKfycbx3MLgZC36D-Ppf1jNT03hrsu_JM_Nom1QLZspIPvkttobZK3kotM8H22IIFB2lwnlrBw/exec" frameborder="0"></iframe>
-	<input type="submit" class="tag03" value="test2">
+	    <div id="text-button" onclick="clickBut()">Click</div>
     </div>
 	
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -46,11 +46,9 @@
 			$('form').append(`<input type="hidden" id="lineid" value="${userId}">`);
 		})
 	    
-	    	$('form').submit(function( event ) {
-			event.preventDefault();
-			var hogehoge = "test";
-			alert(hogehoge);
-		});
+	    	function clickBut() {
+			alert("test");
+		}
     </script>
 </body>
 </div>
