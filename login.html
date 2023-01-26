@@ -58,8 +58,9 @@
 		
 		$('form').submit(function( event ) {
 			event.preventDefault();
-			var result = $.post( 'https://script.google.com/macros/s/AKfycbzoxkZilL8WUxOtzlKv-oWYWv_t13pJhy9nMwgjVA0rkV3hW53NuteSkN46L-KVp2he-g/exec', $('form').serialize() );
-			alert(String(result));
+			var result = "test";
+			result = $.post( 'https://script.google.com/macros/s/AKfycbzoxkZilL8WUxOtzlKv-oWYWv_t13pJhy9nMwgjVA0rkV3hW53NuteSkN46L-KVp2he-g/exec', $('form').serialize() );
+			alert(JSON.stringfy(result));
 		});
     </script>
 </body>
